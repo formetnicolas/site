@@ -1,236 +1,281 @@
 ---
-title: 'Pixel Perfect Websites'
-description: 'Meta description for the page'
+title: 'Création de site internet - SEO - Développement web'
+description: 'Nicolas Formet développeur web expérimenté spécialisé en développement web et création de site internet,
+SEO et marketing digital. Contactez-moi pour vos projets de création de sites web, conseil et assistance informatique en
+freelance.'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
-eleventyNavigation:
-  key: Home
-  order: 100
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
+<!-- Script for Netlify Identity -->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+    if (window.netlifyIdentity) {
+        window
+            .netlifyIdentity
+            .on('init', (user) => {
+                if (!user) {
+                    window
+                        .netlifyIdentity
+                        .on('login', () => {
+                            document.location.href = '/admin/';
+                        });
+                }
+            });
+    }
+</script>
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17" />
-                    Get in Touch
-                </a>
-            </div>
+<section id="hero">
+    <div class="cs-container">
+        <div class="cs-flex-group" style="max-width: 100%;">
+            <span class="cs-topper">Nicolas Formet</span>
+            <h1 class="cs-title">Aider et accompagner les artisans, commerçants et TPE à prendre leur place sur le web.
+            </h1>
+            <p class="cs-text">
+                Rien de plus simple. Discutons ensemble de votre projet, je m'occupe de tout!
+            </p>
+            <a href="/about" class="cs-button-solid">Mes valeurs</a>
+            <a href="/contact" class="cs-button-transparent">
+                CONTACT
+            </a>
         </div>
+    </div>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500"
+            height="1667" loading="eager">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+    <!-- Get Icons From flaticon.com -->
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/conception-reactive.png" alt="appliance"
+                style="width: 100%;height: 100%;" />
         </picture>
-    </section>
+        <h2>Création de site</h2>
+        <p>Réalisation du graphisme/design de votre site, développement du site web, gestion de l'hébergement.
+            Asseyez-vous, je m'occupe de tout! Je vous accompagne pendant le processus de création de votre site
+            internet. </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/seo.png" alt="appliance"
+                style="width: 100%;height: 100%;" />
+        </picture>
+        <h2>SEO</h2>
+        <p>Stratégie de référencement (SEO) pour être le premier sur google, Stratégie de communication adaptée au web,
+            je vous aide à définir votre stratégie digitale afin de convertir vos clients.</p>
+    </div>
+    <div class="card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="/assets/svgs/amelioration.png" alt="appliance"
+                style="width: 100%;height: 100%;" />
+        </picture>
+        <h2>Conseil</h2>
+        <p>Vous recherchez des solutions pour vous faciliter la vie (moyens de paiement en ligne, système de facturation
+            ou de prise de rendez-vous...). Je vous apporte ma connaissance du web pour faciliter votre digitalisation.
+        </p>
+    </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
 
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
+<!-- No headers, so no section tag -->
+<div id="stats-316">
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Stats/check-gold.svg" alt="icon"
+                    width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
+            <div class="cs-flex-group">
+                <span class="cs-number">7</span>
+                <span class="cs-desc">Clients Satisfaits</span>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Stats/award-gold.svg" alt="icon"
+                    width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-number">4+</span>
+                <span class="cs-desc">Années d'Expérience</span>
+            </div>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Stats/group-gold.svg" alt="icon"
+                    width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <div class="cs-flex-group">
+                <span class="cs-number">10</span>
+                <span class="cs-desc">Projets Web Terminés</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/pc-clair.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/pc-clair.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/pc-clair.jpg" alt="pc-clair" loading="lazy"
+                    width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2" style="border-radius: 50%;">
+                <source media="(max-width: 600px)" srcset="/assets/images/prof_pic.png">
+                <source media="(min-width: 601px)" srcset="/assets/images/prof_pic.png">
+                <img aria-hidden="true" decoding="async" src="/assets/images/prof_pic.png" alt="nicolas formet"
+                    loading="lazy" width="400" height="563">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">Ma vision</span>
+            <h2 class="cs-title">A propos de moi</h2>
+            <p class="cs-text">Après avoir travaillé pendant plusieurs années pour de grands comptes tels que la SNCF,
+                la Caisse Nationale d'Assurance Maladie ou encore Michelin, j'ai décidé de me lancer à mon compte dans
+                le domaine du développement et de la création de site web. Mon but est simple: aider et accompagner les
+                artisans, commerçants et TPE à gagner en visibilité sur internet.</p>
+            </p>
+            <p class="cs-text">Construire son image sur le web est devenu indispensable et trop peu de petites
+                entreprises (par manqe
+                de temps ou de compétences) se lançent dans l'aventure. Je propose alors mes services, à un prix défiant
+                la concurrence des agences, afin de vous accompagner pour tirer le meilleur parti de ce merveilleux
+                outil qu'est le web.</p>
+            <div class="cs-flex-group">
+                <p class="cs-flex-p"> " Aider et accompagner mes clients sur les nouvelles technologies, afin de leur
+                    permettre de gagner du
+                    temps et se simplifier la vie. Je m'occupe de tout, vous êtes le bien venu! "
                 </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
+                <span class="cs-name">Nicolas Formet</span>
+                <span class="cs-job">Développeur Informatique</span>
+                <img class="cs-quote-icon" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136"
                     height="77" />
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
             </div>
+            <a href="/about" class="cs-button-solid">En savoir plus</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--            Extra Content To Rank             -->
+<!-- ============================================ -->
 
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
+<section id="sbs-r">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/mobile.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/mobile.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/mobile.jpg" alt="house" loading="lazy"
+                    width="400" height="560">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/clavier.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/clavier.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/clavier.jpg" alt="cabinets" loading="lazy"
+                    width="400" height="560">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">Blog - FAQ</span>
+            <h2 class="cs-title">Vous avez une question? Découvrez les nouveautés</h2>
+            <p class="cs-text">Découvrez mon blog, celui d'un développeur web expérimenté et passionné. Explorez les
+                articles et sujets autour de la création de sites web, administration des réseaux, assistance
+                informatique et services de cybersécurité...</p>
+            <p class="cs-text">
+                Découvrez aussi ma Foire Aux Questions les plus posées.
+            </p>
+            <a href="/blog" class="cs-button-solid">Découvrir le Blog</a>
+
+            <a href="/faq" class="cs-button-solid" style="left: 10%;">Découvrir la FAQ</a>
+        </div>
+    </div>
+</section>
+{% include 'components/offres.html' %}
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<section id="gallery">
+    <div class="cs-container">
+        <span class="cs-topper">Mes projets</span>
+        <h2 class="cs-title">Découvrez les sites sur lesquels, j'ai travaillé.</h2>
+        <div class="cs-image-group">
+            <!-- Row 1-->
+            <div class="cs-row-special cs-row-1">
+                <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
+                    <a href="http://www.stonedeaf.fr/" title="site stonedeaf">
+                        <source media="(max-width: 600px)"
+                            srcset="/assets/images/portfolio/capture-accueil-www.stonedeaf.fr.png">
+                        <source media="(min-width: 601px)"
+                            srcset="/assets/images/portfolio/capture-accueil-www.stonedeaf.fr.png">
+                        <img aria-hidden="true" decoding="async"
+                            src="/assets/images/portfolio/capture-accueil-www.stonedeaf.fr.png"
+                            alt="capture-accueil-www.stonedeaf.fr" loading="lazy" width="400" height="560"
+                            style="object-position: right top;">
+                    </a>
                 </picture>
                 <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
+                    <a href="http://www.limmopourvous.fr/" title="site limmopourvous">
+                        <source media="(max-width: 600px)"
+                            srcset="/assets/images/portfolio/FireShot Capture 005 - Agence Immobilière Limmopourvous Thaon les vosges - Immo Pour Vous - _ - www.limmopourvous.fr.png">
+                        <source media="(min-width: 601px)"
+                            srcset="/assets/images/portfolio/FireShot Capture 005 - Agence Immobilière Limmopourvous Thaon les vosges - Immo Pour Vous - _ - www.limmopourvous.fr.png">
+                        <img aria-hidden="true" decoding="async"
+                            src="/assets/images/portfolio/FireShot Capture 005 - Agence Immobilière Limmopourvous Thaon les vosges - Immo Pour Vous - _ - www.limmopourvous.fr.png"
+                            alt=" Agence Immobilière Limmopourvous Thaon les vosges-ImmoPourVous- www.limmopourvous.fr"
+                            loading="lazy" width="400" height="560" style="object-position: right top;">
+                    </a>
+                </picture>
+                <picture class="cs-picture cs-picture3">
+                    <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg"
+                        alt="building a new wall" loading="lazy" width="400" height="560"
+                        style="object-position: right top;">
                 </picture>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+            <!-- Row 2 
+                <div class="cs-row cs-row-2">-->
+            <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
                     <picture class="cs-picture cs-picture1">
                         <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
@@ -246,10 +291,10 @@ eleventyNavigation:
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
                         <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
                     </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                </div>-->
+            <!-- Row 3 
+                <div class="cs-row cs-row-3">-->
+            <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout
                     <picture class="cs-picture cs-picture1">
                         <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
                         <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
@@ -266,84 +311,58 @@ eleventyNavigation:
                         <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
                     </picture>
 
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+                </div>-->
         </div>
-    </section>
+        <a href="/projects" class="cs-button-solid">Découvrir tous mes projets</a>
+    </div>
+</section>
+{% include 'components/faq.html' %}
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
+<section id="reviews">
+    <div class="cs-container">
+        <span class="cs-topper">Avis client</span>
+        <h2 class="cs-title">Quelques mots de mes clients</h2>
+        <p class="cs-text">
+            Vous avez encore un doute? Satisfaction et bons conseils sont mes maîtres mots! Voici ce qu'ont pensé mes
+            clients de ma prestation.</p>
+        <ul class="cs-card-group">
+            <!-- Review 1 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                    src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80" />
+                <p class="cs-item-p">
+                    J'avais besoin d'un site pour promouvoir mon projet sur le net. Avec des conseils avisés et de la
+                    bonne humeur, mon projet à été réalisé en un temps record, c'est parfait.</p>
+                <span class="cs-reviewer">
+                    Thomas C.
+                    <span class="cs-desc">Client</span>
+                </span>
+                <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96"
                     height="16" />
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
+            </li>
+            <!-- Review 2 -->
+            <li class="cs-item">
+                <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+                    src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80" />
+                <p class="cs-item-p"> Créer mon site m'a permis de toucher plus de clients, éviter les coups de fil
+                    chronophages, je gagne du temps et je peux me concentrer sur mon métier. Nicolas est quelqu'un de
+                    très investi qui ne vous laissera pas tomber! Je recommande.
+                </p>
+                <span class="cs-reviewer">
+                    Sophie W.
+                    <span class="cs-desc">Client</span>
+                </span>
+                <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96"
                     height="16" />
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
-        </div>
-    </section>
+            </li>
+        </ul>
+    </div>
+</section>
 
-    {% include 'components/cta.html' %}
+{% include 'components/cta.html' %}
 {% endblock %}

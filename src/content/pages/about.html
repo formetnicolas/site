@@ -1,76 +1,86 @@
 ---
-title: 'About'
-description: 'Meta description for the page'
+title: 'Création de site internet - SEO - Développement web'
+description: 'Nicolas Formet développeur web expérimenté spécialisé en développement web et création de site internet, SEO et marketing digital. Contactez-moi pour vos projets de création de sites web, conseil et assistance informatique en freelance.'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'about/'
 eleventyNavigation:
-    key: About Us
-    order: 200
+    key: Découvrir
+    order: 500
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css">
+<link rel="stylesheet" href="/assets/css/about.css">
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+<!-- ============================================ -->
+<!--                    LANDING                   --
     <!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+<section id="int-hero">
+    <h1 id="home-h">Mes valeurs</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/black-background.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/black-background.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/black-background.jpg" alt="black-background"
+            loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/pc-code.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/pc-code.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/pc-code.jpg" alt="pc code"
+                    loading="lazy" width="400" height="563">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/idee.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/idee.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/idee.jpg" alt="idee"
+                    loading="lazy" width="400" height="563">
+            </picture>
         </div>
-    </section>
+        <!-- Right Content Section-->
+        <div class="cs-right">
+            <span class="cs-topper">Ma vision</span>
+            <h2 class="cs-title"> A propos de moi</h2>
+            <p class="cs-text">
+                Après avoir travaillé pendant plusieurs années pour de grands comptes tels que la SNCF, la Caisse
+                Nationale d'Assurance Maladie ou encore Michelin, j'ai décidé de me lancer à mon compte dans le domaine
+                du développement et de la création de site web. Mon but est simple: aider et accompagner les artisans,
+                commerçants et TPE à gagner en visibilité sur internet.</p>
+            <p class="cs-text">
+                Construire son image sur le web est devenu indispensable et trop peu de petites entreprises (par manqe
+                de temps ou de compétences) se lançent dans l'aventure. Je propose alors mes services, à un prix défiant
+                la concurrence des agences, afin de vous accompagner pour tirer le meilleur parti de ce merveilleux
+                outil qu'est le web.</p>
+            <div class="cs-flex-group">
+                <p class="cs-flex-p">
+                    Aider et accompagner mes clients sur les nouvelles technologies, afin de leur permettre de gagner du
+                    temps et se simplifier la vie. Je m'occupe de tout, vous êtes le bien venu!
+                </p>
+                <span class="cs-name">Nicolas Formet</span>
+                <span class="cs-job">Développeur Informatique</span>
+                <img class="cs-quote-icon-special" loading="lazy" decoding="async"
+                    src="/assets/images/prof_pic.png" alt="gavel" width="80"
+                    height="80">
+            </div>
+            <a href="/projects" class="cs-button-solid">Mes projets</a>
+        </div>
+    </div>
+</section>
 
-    {% include 'components/cta.html' %}
+{% include 'components/cta.html' %}
 
 {% endblock %}

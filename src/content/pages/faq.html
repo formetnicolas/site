@@ -1,10 +1,10 @@
 ---
 title: 'Création de site internet - SEO - Développement web'
 description: 'Nicolas Formet développeur web expérimenté spécialisé en développement web et création de site internet, SEO et marketing digital. Contactez-moi pour vos projets de création de sites web, conseil et assistance informatique en freelance.'
-preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'blog/'
+preloadImg: '/assets/images/pc-clair.jpg'
+permalink: 'faq/'
 eleventyNavigation:
-    key: Blog
+    key: FAQ
     order: 500
 ---
 
@@ -20,7 +20,7 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Blog</h1>
+        <h1 id="home-h">Foire aux questions</h1>
         <picture>
             <source media="(max-width: 600px)" srcset="/assets/images/pc-clair.jpg">
             <source media="(min-width: 601px)" srcset="/assets/images/pc-clair.jpg">
@@ -55,28 +55,13 @@ eleventyNavigation:
                         </picture>
                         <!--Article Info-->
                         <div class="article-group">
-                            <div class="blog-authorGroup">
-                                <!--Author Image-->
-                                <picture class="blog-author-img">
-                                    <img
-                                    src="/assets/svgs/profile.svg"
-                                    alt="house"
-                                    width="32"
-                                    height="32"
-                                    decoding="async" />
-                                </picture>
-                                <span class="blog-author">{{ post.data.author }}</span>
-                                <span aria-hidden="true" class="blog-dot"></span>
-                                <!--Blog Date-->
-                                <span class="blog-date">{{ post.date | postDate }}</span>
-                            </div>
                             <h2 class="blog-h1">
                                 {{ post.data.title }}
                             </h2>
                             <p class="blog-desc">
                                 {{ post.data.description }}
                             </p>
-                            <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+                            <a href="{{ post.url }}" class="blog-link">Continuer la lecture</a>
                         </div>
                     </article>
                 {%- endfor -%}

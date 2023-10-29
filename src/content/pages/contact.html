@@ -1,6 +1,6 @@
 ---
-title: 'Contact'
-description: 'Meta description for the page'
+title: 'Création de site internet - SEO - Développement web'
+description: 'Contact - Nicolas Formet - Developpeur web'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
 ---
@@ -18,11 +18,11 @@ permalink: 'contact/'
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
+        <h1 id="home-h">Contact </h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/pc-clair.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/pc-clair.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/pc-clair.jpg" alt="pc-clair" loading="eager" width="2500" height="1667">
         </picture>
     </section>
 
@@ -35,53 +35,38 @@ permalink: 'contact/'
             <form id="cs-form" name="Contact Form" method="post">
                 <div class="cs-content">
                     <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
+                    <h2 class="cs-title">Pour me contacter</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        Vous avez une question, un projet? N'hésitez pas à me contacter je me ferai un plaisir de vous répondre!
                     </p>
                 </div>
                 <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
+                    Nom
+                    <input required type="text" id="name" name="name" placeholder="Nom">
                 </label>
                 <label>
                     Email
                     <input required type="text" id="email" name="email" placeholder="Email">
                 </label>
                 <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    Téléphone
+                    <input required type="text" id="phone" name="phone" placeholder="Téléphone">
                 </label>
                 <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+                    Comment m'avez vous trouvé?
+                    <input type="text" id="find" name="find-us" placeholder="Internet, bouche à oreille...">
                 </label>
                 <label class="cs-label-message">
                     Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                    <textarea required name="Message" id="message" placeholder="Ecrivez votre message..."></textarea>
                 </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
+                <button class="cs-button-solid" type="submit">Envoyer</button>
             </form>
             <div class="cs-right-section">
                 <!--Email-->
                 <span class="cs-header">Email</span>
                 <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br />
-                    {{client.address.lineTwo}},
-                    <br />
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
+                
 
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">

@@ -132,7 +132,14 @@
             right: clamp(1rem, 4vw, 2rem);
             bottom: calc(0 / 16 * 1rem);
         }
-
+        .cs-quote-icon-special {
+            /* 60px - 136px */
+            height: auto;
+            position: absolute;
+            /* 16px - 32px */
+            right: clamp(1rem, 4vw, 2rem);
+            bottom: 0.4rem;
+        }
         .cs-button-solid {
             margin-top: calc(32 / 16 * 1rem);
         }
