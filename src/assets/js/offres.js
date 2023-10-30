@@ -1,7 +1,10 @@
-const leftOption = document.querySelector("#pricing-1387 #cs-option1-1387");
+        const leftOption = document.querySelector("#pricing-1387 #cs-option1-1387");
         const rightOption = document.querySelector("#pricing-1387 #cs-option2-1387");
         const toggle = document.querySelector("#pricing-1387 .cs-toggle");
         const cardGroup = Array.from(document.querySelectorAll('#pricing-1387 .cs-card-group'))
+        console.log(cardGroup);
+        
+        console.log(cardGroup);
         // when you click the middle toggle
         toggle.addEventListener('click', (e) => { 
             for (const item of cardGroup) {

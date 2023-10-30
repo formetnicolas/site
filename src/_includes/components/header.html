@@ -22,6 +22,8 @@
       <!-- This also allows for easy substitution of CodeStitch navigations. Just replace the .cs-ul-wrapper in the new navigation with this one -->
       <div class="cs-ul-wrapper">
         <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+          
+    <a href="/contact" class="cs-li-link"> Contactez-moi</a>
           {% set navPages = collections.all | eleventyNavigation %}
           {# Loop through all pages with a eleventyNavigation in the frontmatter #}
           {% for entry in navPages %}
