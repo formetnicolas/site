@@ -45,7 +45,7 @@ permalink: '/'
             <h1 class="cs-title">Aider et accompagner les artisans, commerçants et TPE à prendre leur place sur le web.
             </h1>
             <p class="cs-text">
-                Rien de plus simple. Discutons ensemble de votre projet, je m'occupe de tout!
+                Rien de plus simple. Discutons ensemble de votre projet, je m'occupe de tout.
             </p>
             <a href="/about" class="cs-button-solid">Mes valeurs</a>
             <a href="/contact" class="cs-button-transparent">
@@ -139,7 +139,10 @@ permalink: '/'
         </li>
     </ul>
 </div>
-
+{% include 'components/avantages.html' %}
+<div id="offres">
+</div>
+{% include 'components/offres.html' %}
 <!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
@@ -230,9 +233,7 @@ permalink: '/'
         </div>
     </div>
 </section>
-<div id="offres">
-{% include 'components/offres.html' %}
-</div>
+
 <!-- ============================================ -->
 <!--                   Gallery                    -->
 <!-- ============================================ -->
@@ -240,7 +241,7 @@ permalink: '/'
 <section id="gallery">
     <div class="cs-container">
         <span class="cs-topper">Mes projets</span>
-        <h2 class="cs-title">Découvrez les sites sur lesquels, j'ai travaillé.</h2>
+        <h2 class="cs-title">Découvrez les sites sur lesquels j'ai travaillé.</h2>
         <div class="cs-image-group">
             <!-- Row 1-->
             <div class="cs-row-special cs-row-1">

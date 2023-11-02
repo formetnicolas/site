@@ -1,0 +1,5 @@
+{
+    "layout": "layouts/faq.html",
+	"tags": "faq",
+	"permalink": "faq/{{title}}/index.html"
+}

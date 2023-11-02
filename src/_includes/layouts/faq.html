@@ -6,8 +6,8 @@ freelance.'
 preloadImg: '/assets/images/pc-clair.jpg'
 permalink: 'faq/'
 eleventyNavigation:
-    key: FAQ
-    order: 600
+key: FAQ
+order: 500
 ---
 
 {% extends "layouts/base.html" %}
@@ -34,49 +34,14 @@ eleventyNavigation:
 <!-- ============================================ -->
 <!--              Main FAQ Content               -->
 <!-- ============================================ -->
-<!-- ============================================ -->
-<!--                     FAQ                      -->
-<!-- ============================================ -->
 
-<!-- ============================================ -->
-<!--                     FAQ                      -->
-<!-- ============================================ -->
-
-<section id="faq-350-350" style="padding-top: 5%;">
-    <div class="cs-container-faq">
-        <div class="cs-content-faq-special">
-            <span class="cs-topper-faq">FOIRE AUX QUESTIONS</span>
-            <h2 class="cs-title-faq" style="padding-top: 3%;   font-size: xxx-large;">Questions les plus fréquentes</h2>
-            {% if collections.post | length == 0 %}
-                <h1>Pas de posts récents</h1>
-                {% else %}
-            <ul class="cs-faq-group">
-                {%- for post in collections.faq | reverse -%}
-                <!-- Active class added as default -->
-                <li class="cs-faq-item">
-                    <button class="cs-button-faq">
-                        <span class="cs-button-text-faq" style="font-size: x-large;">
-                            {{ post.data.question }}
-                        </span>
-                    </button>
-                    <p class="cs-item-p"> {{ post.data.Answer}}
-                    </p>
-                </li>
-                {%- endfor -%}
-            </ul>
-            {% endif %}
-            <a href="/contact" class="cs-button-solid" style="margin-top: 10%;left: 30%; margin-bottom: 5%">Me contacter</a>
-        </div>
-    </div>
-</section>                  
 
 <!-- ============================================ -->
 <!--                 FAQ Articles                -->
-<!-- ============================================ 
+<!-- ============================================ -->
 <section id="faq-350-350" style="padding-top: 5%;">
     <div class="cs-container-faq">
         <div class="cs-left-faq">
-
             <div class="cs-content-faq">
                 <span class="cs-topper-faq">FOIRE AUX QUESTIONS</span>
                 <h2 class="cs-title-faq" style="padding-top: 3%;   font-size: xxx-large;">Questions les plus fréquentes</h2>
@@ -88,10 +53,13 @@ eleventyNavigation:
                     <li class="cs-faq-item">
                         <button class="cs-button-faq">
                             <span class="cs-button-text-faq" style="font-size: x-large;">
-                                {{ post.data.question }}
+                                {{ post.data.title }}
                             </span>
                         </button>
-                        <p class="cs-item-p">{{ post.data.Answer}}</p>
+                        <p class="cs-item-p">{{ post.data.description }}</p>
+                        <div>
+                    {{ content | safe }}
+                        </div>
                     </li>
                     {%- endfor -%}
                 </ul>
@@ -100,5 +68,4 @@ eleventyNavigation:
         </div>
     </div>
 </section>
--->
 {% endblock %}
