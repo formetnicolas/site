@@ -1509,7 +1509,6 @@
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
-        max-width: 33.875rem;
         display: flex;
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
@@ -1529,6 +1528,7 @@
         width: 100%;
         max-width: 25.875rem;
         margin: 0;
+        margin-top: 2%;
         padding: 0.75rem;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
@@ -1911,11 +1911,6 @@
         align-items: center;
         justify-content: space-between;
     }
-    #pricing-1387 .cs-content {
-        text-align: left;
-        width: 47%;
-        align-items: flex-start;
-    }
     #pricing-1387 .cs-info {
         min-height: 27rem;
     }
@@ -1964,7 +1959,6 @@ body {
     font-weight: 900;
     line-height: 1.2em;
     text-align: inherit;
-    max-width: 43.75rem;
     margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
@@ -2009,7 +2003,6 @@ body {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
-        max-width: 33.875rem;
         display: flex;
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
@@ -2029,6 +2022,8 @@ body {
         width: 100%;
         max-width: 25.875rem;
         margin: 0;
+        
+        margin-top: 2%;
         padding: 0.75rem;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
@@ -2406,15 +2401,10 @@ body {
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #pricing-1387 .cs-container {
-        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
-    #pricing-1387 .cs-content {
-        text-align: left;
-        width: 47%;
-        align-items: flex-start;
-    }
+    
     #pricing-1387 .cs-info {
         min-height: 27rem;
     }
