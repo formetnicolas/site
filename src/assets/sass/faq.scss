@@ -345,9 +345,13 @@ body {
 
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+    
     body.dark-mode {
         #faq-350-350 {
-            background-color: var(--medium);
+            .cs-button-text-faq{
+                color:white;
+            } 
+            background-color: var(--dark);
 
             .cs-picture-faq {
                 border-color: var(--accent);
